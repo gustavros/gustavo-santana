@@ -87,7 +87,7 @@ export default function Works({ dictionary }: WorksProps) {
           className="rounded-lg bg-card text-card-foreground"
         >
           <div className="flex flex-col space-y-1.5">
-            <div className="flex items-center justify-between gap-x-2 text-base">
+            <div className="flex items-start md:items-center justify-between gap-x-2 text-base">
               <div className="flex flex-col sm:flex-row sm:items-center sm:gap-2">
                 <h1 className="font-semibold leading-none text-lg">
                   <a
@@ -116,14 +116,14 @@ export default function Works({ dictionary }: WorksProps) {
               </div>
 
               <div className="text-sm tabular-nums text-gray-500">
-                <span className="font-mono">
+                <span className="font-mono text-xs md:text-sm">
                   {new Date(work.dates.start).toLocaleDateString("en-US", {
                     year: "numeric",
                     month: "short",
                   })}
                 </span>
                 <span className="px-1">-</span>
-                <span className="font-mono">
+                <span className="font-mono text-xs md:text-sm">
                   {work.dates.end
                     ? new Date(work.dates.end).toLocaleDateString("en-US", {
                         year: "numeric",
