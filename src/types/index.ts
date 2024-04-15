@@ -1,5 +1,9 @@
 import { Icons } from "@/assets/icons";
 
+type WorksType = {
+  dictionary: Dictionary["works"];
+};
+
 export interface SocialsButtons {
   name: string;
   icon: keyof typeof Icons;
@@ -16,11 +20,12 @@ export interface NavItem {
   description?: string;
 }
 
-export interface CardsItems {
+export interface Works  {
   companyName: string;
   companyHref?: string;
   position: string;
   remote?: boolean;
+  freelancer?: boolean;
   description: string;
   dates: {
     start: string;

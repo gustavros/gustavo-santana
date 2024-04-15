@@ -10,7 +10,7 @@ interface SocialsButtonsListProps {
 export default function SocialsButtonsList({ socialsButtons }: SocialsButtonsListProps) {
 	return (
 		<>
-			{socialsButtons.map((item, index) => {
+			{socialsButtons.map((item) => {
 				const Icon = Icons[item.icon || "externalLink"];
 
 				return (

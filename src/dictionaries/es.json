@@ -1,0 +1,45 @@
+{
+  "header": {
+    "theme": {
+      "light": "Claro",
+      "dark": "Oscuro",
+      "system": "Sistema"
+    },
+    "description": "Mi nombre es Gustavo."
+  },
+  "about": {
+    "title": "Sobre mí",
+    "description": "Tengo 1.6 años de experiencia con <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>TypeScript</strong>, <strong>Tailwind CSS</strong>, <strong>ReactJS</strong>, <strong>Next.js</strong>, <strong>Git</strong>, <strong>GitHub</strong> y más. Me encanta estudiar y aprender cosas, gracias a mi curiosidad y experiencia en la resolución de problemas."
+  },
+  "works": {
+    "title": "Experiencia laboral",
+    "present": "Actualmente",
+    "remote": "Remoto",
+    "jobs": {
+      "quackity-studios": {
+        "position": "Desarrollador Front-end",
+        "description": "Actualmente trabajo en Quackity Studios como desarrollador front-end, enfocado en la creación de sitios web para un amplio mercado internacional. Utilizo TypeScript, Tailwind CSS, ReactJS, Next.js y muchos más para el desarrollo de proyectos y sitios web de gran envergadura."
+      },
+      "encapse-arquitetura": {
+        "position": "Desarrollador Front-end",
+        "description": "Desarrollé la aplicación utilizando React, Tailwind CSS, React Hook Form con Zod e implementé funciones para enviar correos electrónicos al cliente y procesar datos, integrándose con la base de datos de la empresa."
+      },
+      "galorys": {
+        "position": "Desarrollador Front-end",
+        "description": "Desarrollé interfaces de usuario interactivas y responsivas utilizando React, Styled Components y TypeScript, proporcionando una experiencia visual moderna y adaptable. Integré APIs en el backend para una comunicación sin problemas entre la interfaz y las funcionalidades del sistema, asegurando una interacción efectiva."
+      },
+      "shield-ethical": {
+        "position": "Desarrollador Front-end",
+        "description": "Mi objetivo fue desarrollar una landing page interactiva y receptiva con un enfoque en la experiencia del usuario, siguiendo los principios de pixel perfect a un alto estándar. Utilicé HTML5, CSS3 y JavaScript para desarrollar un panel con un diseño moderno y adaptable."
+      },
+      "hide-pagamentos": {
+        "position": "Desarrollador Front-end",
+        "description": "Desarrollé una landing page que tiene como objetivo optimizar la experiencia del usuario, con un enfoque en un diseño pixel perfect y un diseño moderno y adaptable. Utilizando HTML5, CSS3, JavaScript, desarrollé una landing page receptiva e interactiva."
+      },
+      "galorys-gta": {
+        "position": "Desarrollador Front-end",
+        "description": "Desarrollé una landing page para un sitio web de Role Play de GTA 5. Diseñé el concepto en Figma. Tecnologías utilizadas: React, Styled Components y TypeScript."
+      }
+    }
+  }
+}

@@ -1,65 +1,4 @@
-import { CardsItems, NavItem, SkillsItems, SocialsButtons } from "@/types";
-
-export const cardsItems: CardsItems[] = [
-  {
-    companyName: "Encapse Arquitetura",
-    companyHref: "https://www.encapse.arq.br/",
-    position: "Front-End Developer",
-    remote: true,
-    description:
-      "I played a key role in creating the Encapse Arquitetura landing page, showcasing my proficiency in modern web technologies like React, Tailwind CSS, and Zod for form validations. The main aim was to design an attractive online presence for the architecture firm.",
-    dates: {
-      start: "06/01/2023",
-      end: "08/01/2023",
-    },
-  },
-  {
-    companyName: "Galory's",
-    companyHref: "https://www.galorys.com/",
-    position: "Front-End Developer",
-    remote: true,
-    description:
-      "My objective was to create interactive and responsive user interfaces using modern technologies such as React, Styled Components, and TypeScript. Additionally, I integrated backend APIs to facilitate seamless communication between the interface and system functionalities.",
-    dates: {
-      start: "07/01/2022",
-      end: "03/01/2023",
-    },
-  },
-  {
-    companyName: "Shield Ethical",
-    companyHref: "https://shieldethical.com.br/",
-    position: "Front-End Developer",
-    remote: true,
-    description:
-      "My goal was to develop an interactive and responsive landing page with a focus on user experience, following the principles of pixel perfect to a high standard.",
-    dates: {
-      start: "10/01/2022",
-      end: "11/01/2022",
-    },
-  },
-  {
-    companyName: "Hide Pagamentos",
-    companyHref: "https://www.sapagamentos.com/",
-    position: "Front-End Developer",
-    remote: true,
-    description: `My objective was to develop an interactive and responsive landing page with a focus on user experience, following the principles of pixel perfect.`,
-    dates: {
-      start: "10/01/2022",
-      end: "10/01/2022",
-    },
-  },
-  {
-    companyName: "Galory's ®️ Official - Grand Theft Auto",
-    companyHref: "https://galorys.com/games/grandtheftauto",
-    position: "Front-End Developer",
-    remote: true,
-    description: `I created a landing page for a GTA 5 Role Play website. I designed the concept in Figma and implemented backend APIs to ensure seamless functionality between the interface and landing page data.`,
-    dates: {
-      start: "07/01/2022",
-      end: "07/01/2022",
-    },
-  },
-];
+import { Works, NavItem, SkillsItems, SocialsButtons } from "@/types";
 
 export const socialsButtons: SocialsButtons[] = [
   {
@@ -138,12 +77,5 @@ export const skillsItems: SkillsItems[] = [
   },
   {
     name: "SASS",
-  },
-  {
-    name: "Node.js",
-  },
-
-  {
-    name: "MongoDB",
   },
 ];
