@@ -33,13 +33,12 @@ function getLocale(request: NextRequest): string | undefined {
   return locale;
 }
 
-const PUBLIC_FILE = /\.(.*)$/
+const PUBLIC_FILE = /\.(.*)$/;
 
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
-  if (PUBLIC_FILE.test(pathname))
-    return;
+  if (PUBLIC_FILE.test(pathname)) return;
 
   // Verifique se há alguma localidade suportada no nome do caminho
   const pathnameIsMissingLocale = i18n.locales.every(
