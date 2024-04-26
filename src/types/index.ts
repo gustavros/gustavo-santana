@@ -20,7 +20,16 @@ export interface NavItem {
   description?: string;
 }
 
-export interface Works  {
+export interface Educations {
+  title: string;
+  description: string;
+  dates: {
+    start: string;
+    end: string;
+  };
+}
+
+export interface Works {
   companyName: string;
   companyHref?: string;
   position: string;
