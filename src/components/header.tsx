@@ -19,6 +19,7 @@ import { useCallback } from "react";
 import { Locale } from "@/i18n-config";
 
 import { Cookies } from "react-cookie";
+import { Icons } from "@/assets/icons";
 
 type HeaderProps = {
   dictionary: Dictionary["header"];
@@ -66,11 +67,19 @@ export default function Header({ dictionary }: HeaderProps) {
           </SelectTrigger>
           <SelectContent>
             <SelectGroup>
-              {languages.map((language) => (
-                <SelectItem key={language.value} value={language.value}>
-                  {language.label}
-                </SelectItem>
-              ))}
+              {languages.map((language) => {
+                const Icon = Icons[language.flag || "externalLink"];
+
+                return (
+                  <SelectItem key={language.value} value={language.value}>
+                    <div className="flex items-center gap-2">
+                      {language.flag && <Icon className="ml-2 h-4 w-4" />}
+
+                      {language.label}
+                    </div>
+                  </SelectItem>
+                );
+              })}
             </SelectGroup>
           </SelectContent>
         </Select>
@@ -86,7 +95,7 @@ export default function Header({ dictionary }: HeaderProps) {
             <p className="pt-1 font-mono text-sm text-muted-foreground">
               {dictionary.description}
             </p>
-            
+
             <div className="flex items-center gap-2 py-1">
               <a
                 target="_blank"
