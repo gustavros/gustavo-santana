@@ -18,7 +18,7 @@
     "jobs": {
       "quackity-studios": {
         "position": "Desenvolvedor Front-end",
-        "description": "Atualmente, trabalho na Quackity Studios como desenvolvedor front-end, focado na criação de websites para um amplo mercado internacional. Utilizo TypeScript, Tailwind CSS, ReactJS, Next.js e muitos outros para o desenvolvimento de projetos e websites de grande porte."
+        "description": "Desenvolvi um dashboard interno para administração e gerenciamento de contas de redes sociais, utilizando tecnologias como React, Vite, React Router Dom e TypeScript. Além disso, desempenhei um papel importante como um dos principais desenvolvedores da landing page do QSMP, empregando Next.js com server components, TailwindCSS e TypeScript para exibição de conteúdo do servidor."
       },
       "encapse-arquitetura": {
         "position": "Desenvolvedor Front-end",
@@ -40,6 +40,16 @@
         "position": "Desenvolvedor Front-end",
         "description": "Desenvolvi uma landing page para um site de Role Play de GTA 5. Projetei o conceito no Figma. Tecnologias utilizadas: React, Styled Components e TypeScript."
       }
+    }
+  },
+  "skills": {
+    "title": "Habilidades"
+  },
+  "education": {
+    "title": "Educação",
+    "uninassau": {
+      "title": "Uninassau - Ensino a distância",
+      "description": "Atualmente, interrompi minha graduação em Análise e Desenvolvimento de Sistemas na Uninassau. Apesar de já possuir conhecimento prévio, reconheço a importância do curso para o aprimoramento das minhas habilidades de programação."
     }
   }
 }
