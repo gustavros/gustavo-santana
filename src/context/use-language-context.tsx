@@ -1,5 +1,6 @@
 "use client";
 
+import { Icons } from "@/assets/icons";
 import { Locale, i18n } from "@/i18n-config";
 import { usePathname } from "next/navigation";
 import React, { createContext, useCallback, useContext, useState } from "react";
@@ -7,20 +8,24 @@ import React, { createContext, useCallback, useContext, useState } from "react";
 type Language = {
   label: string;
   value: string;
+  flag: keyof typeof Icons;
 };
 
 const languages: Language[] = [
   {
     label: "English",
     value: "en",
+    flag: "EnglishIcon",
   },
   {
     label: "Português",
     value: "pt-br",
+    flag: "PortugueseIcon",
   },
   {
     label: "Español",
     value: "es",
+    flag: "SpanishIcon",
   },
 ];
 

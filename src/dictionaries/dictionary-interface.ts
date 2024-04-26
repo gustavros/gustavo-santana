@@ -22,4 +22,16 @@ interface Dictionary {
       };
     };
   };
+  skills: {
+    title: string;
+  };
+  education: {
+    title: string;
+    educations: {
+      [key: string]: {
+        title: string;
+        description: string;
+      };
+    };
+  };
 }

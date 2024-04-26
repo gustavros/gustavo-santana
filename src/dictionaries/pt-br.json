@@ -41,5 +41,15 @@
         "description": "Desenvolvi uma landing page para um site de Role Play de GTA 5. Projetei o conceito no Figma. Tecnologias utilizadas: React, Styled Components e TypeScript."
       }
     }
+  },
+  "skills": {
+    "title": "Habilidades"
+  },
+  "education": {
+    "title": "Educação",
+    "uninassau": {
+      "title": "Uninassau - Ensino a distância",
+      "description": "Atualmente, interrompi minha graduação em Análise e Desenvolvimento de Sistemas na Uninassau. Apesar de já possuir conhecimento prévio, reconheço a importância do curso para o aprimoramento das minhas habilidades de programação."
+    }
   }
 }

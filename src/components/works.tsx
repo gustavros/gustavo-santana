@@ -133,10 +133,10 @@ export default function Works({ dictionary }: WorksProps) {
                 </span>
               </div>
             </div>
-            <h4 className="font-mono text-sm leading-none">{work.position}</h4>
+            <h4 className="font-mono text-base leading-none">{work.position}</h4>
           </div>
 
-          <div className="mt-2 text-pretty font-mono text-xs text-muted-foreground">
+          <div className="mt-2 text-pretty font-mono text-sm text-muted-foreground">
             {work.description}
           </div>
         </div>
