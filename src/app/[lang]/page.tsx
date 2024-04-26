@@ -7,6 +7,7 @@ import { getDictionary } from "@/lib/get-dictionary";
 
 import { skillsItems } from "@/utils/data";
 import WorksList from "@/components/works-list";
+import EducationList from "@/components/education-list";
 
 type HomeProps = {
   params: {
@@ -32,25 +33,7 @@ export default async function Home({ params: { lang } }: HomeProps) {
         </div>
       </section>
 
-      <section className="flex min-h-0 flex-col gap-y-3 py-3">
-        <h1 className="text-xl font-bold">{dictionary.education["title"]}</h1>
-
-        <div className="flex flex-col gap-2">
-          <div className="flex items-center justify-between gap-1">
-            <h1 className="font-bold">
-              {dictionary.education["uninassau"].title}
-            </h1>
-
-            <time>
-              <span className="font-mono">2024 - 2026</span>
-            </time>
-          </div>
-
-          <p className="text-pretty font-mono text-sm text-muted-foreground">
-            {dictionary.education["uninassau"].description}
-          </p>
-        </div>
-      </section>
+      <EducationList dictionary={dictionary.education} />
     </section>
   );
 }

@@ -47,9 +47,15 @@
   },
   "education": {
     "title": "Education",
-    "uninassau": {
-      "title": "Uninassau - Distance Learning",
-      "description": "I have currently paused my graduation in Systems Analysis and Development at Uninassau. Although I already have prior knowledge, I recognize the importance of the course for improving my programming skills."
+    "educations": {
+      "uninassau": {
+        "title": "Uninassau - Distance Learning",
+        "description": "I have currently paused my graduation in Systems Analysis and Development at Uninassau. Although I already have prior knowledge, I recognize the importance of the course for improving my programming skills."
+      },
+      "high-school": {
+        "title": "High School",
+        "description": "I have completed high school in 2019. I have obtained a high school diploma, which is a commendation for my academic achievements."
+      }
     }
   }
 }

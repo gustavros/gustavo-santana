@@ -47,9 +47,15 @@
   },
   "education": {
     "title": "Educación",
-    "uninassau": {
-      "title": "Uninassau - Educación a distancia",
-      "description": "Actualmente, he pausado mi graduación en Análisis y Desarrollo de Sistemas en Uninassau. Aunque ya tengo conocimientos previos, reconozco la importancia del curso para mejorar mis habilidades de programación."
+    "educations": {
+      "uninassau": {
+        "title": "Uninassau - Educación a distancia",
+        "description": "Actualmente, he pausado mi graduación en Análisis y Desarrollo de Sistemas en Uninassau. Aunque ya tengo conocimientos previos, reconozco la importancia del curso para mejorar mis habilidades de programación."
+      },
+      "high-school": {
+        "title": "Escuela Secundaria",
+        "description": "He completado la escuela secundaria en 2019. He obtenido un diploma de escuela secundaria, que es un reconocimiento por mis logros académicos."
+      }
     }
   }
 }
