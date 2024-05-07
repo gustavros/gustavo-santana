@@ -33,7 +33,7 @@ export default function EducationList({ dictionary }: EducationListProps) {
           <div className="flex items-center justify-between gap-1">
             <h1 className="font-bold">{education.title}</h1>
 
-            <time>
+            <time className="text-sm tabular-nums text-gray-500">
               <span className="font-mono text-xs md:text-sm">
                 {new Date(education.dates.start).toLocaleDateString("en-US", {
                   year: "numeric",
