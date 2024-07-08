@@ -6,7 +6,17 @@ type WorksProps = {
 };
 
 export default function Works({ dictionary }: WorksProps) {
-  const works: Works[] = [
+  const works: Works[] = [{
+    companyName: "BeeCorp - Saúde e Bem-estar",
+    companyHref: "https://beecorp.com.br/",
+    position: `${dictionary.jobs["beecorp"].position}`,
+    remote: true,
+    description: `${dictionary.jobs["beecorp"].description}`,
+    dates: {
+      start: "03/07/2024",
+      end: "",
+    },
+  },
     {
       companyName: "Quackity Studios",
       companyHref: "https://www.qsmp.co",

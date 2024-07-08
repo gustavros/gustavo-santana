@@ -16,6 +16,10 @@
     "present": "Actualmente",
     "remote": "Remoto",
     "jobs": {
+      "beecorp": {
+        "position": "Desarrollador Front-end",
+        "description": "..."
+      },
       "quackity-studios": {
         "position": "Desarrollador Front-end",
         "description": "Desarrollé un panel interno para la administración y gestión de cuentas de redes sociales, utilizando tecnologías como React, Vite, React Router Dom y TypeScript. Además, desempeñé un papel importante como uno de los principales desarrolladores de la página de inicio de QSMP, empleando Next.js con componentes de servidor, TailwindCSS y TypeScript para la renderización de contenido del servidor."
