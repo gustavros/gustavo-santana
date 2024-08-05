@@ -13,7 +13,7 @@ export default function Works({ dictionary }: WorksProps) {
     remote: true,
     description: `${dictionary.jobs["beecorp"].description}`,
     dates: {
-      start: "03/07/2024",
+      start: "07/03/2024",
       end: "",
     },
   },
