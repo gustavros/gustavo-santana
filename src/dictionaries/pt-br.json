@@ -5,44 +5,44 @@
       "dark": "Escuro",
       "system": "Sistema"
     },
-    "description": "Meu nome é Gustavo."
+    "description": "Meu nome é Gustavo. "
   },
   "about": {
     "title": "Sobre mim",
-    "description": "Tenho 1,6 anos de experiência com <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>TypeScript</strong>, <strong>Tailwind CSS</strong>, <strong>ReactJS</strong>, <strong>Next.js</strong>, <strong>Git</strong>, <strong>GitHub</strong> e mais. Adoro estudar e aprender coisas, graças à minha curiosidade e experiência em resolução de problemas."
+    "description": "Tenho 2 anos de experiência com <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>TypeScript</strong>, <strong>Tailwind CSS</strong>, <strong>ReactJS</strong>, <strong>Next.js</strong>, <strong>Git</strong>, <strong>GitHub</strong>, e mais. Amo estudar e aprender coisas, graças à minha curiosidade e experiência em resolução de problemas."
   },
   "works": {
-    "title": "Experiência profissional",
+    "title": "Experiência Profissional",
     "present": "Atualmente",
     "remote": "Remoto",
     "jobs": {
       "beecorp": {
         "position": "Desenvolvedor Front-end",
-        "description": "..."
+        "description": "Implementação de novas funcionalidades e manutenção da plataforma com React 18, Next.js 14+ e TypeScript. Realizei migração do React 16 e Next.js 12 para versões mais recentes, incluindo ajustes com codemods. Implementei suporte à internacionalização com react-i18next, expandindo operações para EUA e Espanha. Desenvolvi a Cora, uma chatbot de IA integrada com OpenAI, focada em suporte psicológico."
       },
       "quackity-studios": {
         "position": "Desenvolvedor Front-end",
-        "description": "Desenvolvi um dashboard interno para administração e gerenciamento de contas de redes sociais, utilizando tecnologias como React, Vite, React Router Dom e TypeScript. Além disso, desempenhei um papel importante como um dos principais desenvolvedores da landing page do QSMP, empregando Next.js com server components, TailwindCSS e TypeScript para exibição de conteúdo do servidor."
+        "description": "Desenvolvi um painel de controle interno para administração e gerenciamento de contas de mídia social usando React, Vite, React Router Dom e TypeScript. Além disso, fui um dos principais desenvolvedores da página inicial do QSMP, implementando Next.js com componentes de servidor, TailwindCSS e TypeScript para renderização eficiente de conteúdo do lado do servidor."
       },
       "encapse-arquitetura": {
         "position": "Desenvolvedor Front-end",
-        "description": "Desenvolvi a aplicação usando React, Tailwind CSS, React Hook Form com Zod e implementei funcionalidades para enviar e-mails ao cliente e processar dados, integrando-se ao banco de dados da empresa."
+        "description": "Desenvolvi a aplicação utilizando React, Tailwind CSS, React Hook Form com Zod, e implementei funções para envio de e-mails para clientes e processamento de dados, integrando com o banco de dados da empresa."
       },
       "galorys": {
         "position": "Desenvolvedor Front-end",
-        "description": "Desenvolvi interfaces de usuário interativas e responsivas usando React, Styled Components e TypeScript, proporcionando uma experiência visual moderna e adaptável. Integrei APIs ao backend para comunicação contínua entre a interface e as funcionalidades do sistema, garantindo uma interação eficaz."
+        "description": "Desenvolvi interfaces de usuário interativas e responsivas usando React, Styled Components e TypeScript, entregando uma experiência visual moderna e adaptável. Integrei APIs com o backend para garantir uma comunicação suave entre a interface e as funcionalidades do sistema, permitindo uma interação efetiva."
       },
       "shield-ethical": {
         "position": "Desenvolvedor Front-end",
-        "description": "Meu objetivo era desenvolver uma landing page interativa e responsiva com foco na experiência do usuário, seguindo os princípios de pixel perfect com alto padrão. Usei HTML5, CSS3 e JavaScript para desenvolver um painel com design moderno e adaptável."
+        "description": "Desenvolvi uma landing page interativa e responsiva focada na experiência do usuário, seguindo princípios de design pixel-perfect com altos padrões. Usando HTML5, CSS3 e JavaScript, criei um painel com design moderno e adaptável."
       },
       "hide-pagamentos": {
         "position": "Desenvolvedor Front-end",
-        "description": "Desenvolvi uma landing page que visa otimizar a experiência do usuário, com foco em design pixel perfect e um layout moderno e adaptável. Utilizando HTML5, CSS3, JavaScript, desenvolvi uma landing page responsiva e interativa."
+        "description": "Desenvolvi uma landing page focada na otimização da experiência do usuário, seguindo princípios de design pixel-perfect para criar uma interface moderna e adaptável. Usando HTML5, CSS3 e JavaScript, construí uma landing page responsiva e interativa."
       },
       "galorys-gta": {
         "position": "Desenvolvedor Front-end",
-        "description": "Desenvolvi uma landing page para um site de Role Play de GTA 5. Projetei o conceito no Figma. Tecnologias utilizadas: React, Styled Components e TypeScript."
+        "description": "Desenvolvi uma landing page para um site de GTA 5 Role Play, incluindo o conceito de design no Figma. As tecnologias utilizadas incluíram React, Styled Components e TypeScript."
       }
     }
   },
@@ -53,12 +53,12 @@
     "title": "Educação",
     "educations": {
       "uninassau": {
-        "title": "Uninassau - Ensino a distância",
-        "description": "Atualmente, interrompi minha graduação em Análise e Desenvolvimento de Sistemas na Uninassau. Apesar de já possuir conhecimento prévio, reconheço a importância do curso para o aprimoramento das minhas habilidades de programação."
+        "title": "Uninassau - Ensino à Distância",
+        "description": "Atualmente pausei meu curso de Análise e Desenvolvimento de Sistemas na Uninassau. Embora já tenha conhecimento prévio, reconheço a importância do curso para aprimorar minhas habilidades de programação."
       },
       "high-school": {
-        "title": "Ensino médio",
-        "description": "Atualmente, conclui o ensino médio em 2019. Reconhecido como um comprovante de minha renda acadêmica."
+        "title": "Ensino Médio",
+        "description": "Concluí o ensino médio em 2019. Obtive o diploma do ensino médio, que é um reconhecimento das minhas conquistas acadêmicas."
       }
     }
   }

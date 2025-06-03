@@ -3,7 +3,7 @@ import { Works, NavItem, SkillsItems, SocialsButtons } from "@/types";
 export const socialsButtons: SocialsButtons[] = [
   {
     name: "LinkedIn",
-    href: "https://www.linkedin.com/in/gustavo-santana/",
+    href: "https://www.linkedin.com/in/gustavro/",
     icon: "linkedin",
   },
   {

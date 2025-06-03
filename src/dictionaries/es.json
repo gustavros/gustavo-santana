@@ -5,44 +5,44 @@
       "dark": "Oscuro",
       "system": "Sistema"
     },
-    "description": "Mi nombre es Gustavo."
+    "description": "Mi nombre es Gustavo. "
   },
   "about": {
     "title": "Sobre mí",
-    "description": "Tengo 1.6 años de experiencia con <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>TypeScript</strong>, <strong>Tailwind CSS</strong>, <strong>ReactJS</strong>, <strong>Next.js</strong>, <strong>Git</strong>, <strong>GitHub</strong> y más. Me encanta estudiar y aprender cosas, gracias a mi curiosidad y experiencia en la resolución de problemas."
+    "description": "Tengo 2 años de experiencia con <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>TypeScript</strong>, <strong>Tailwind CSS</strong>, <strong>ReactJS</strong>, <strong>Next.js</strong>, <strong>Git</strong>, <strong>GitHub</strong>, y más. Me encanta estudiar y aprender cosas, gracias a mi curiosidad y experiencia en resolución de problemas."
   },
   "works": {
-    "title": "Experiencia laboral",
+    "title": "Experiencia Laboral",
     "present": "Actualmente",
     "remote": "Remoto",
     "jobs": {
       "beecorp": {
         "position": "Desarrollador Front-end",
-        "description": "..."
+        "description": "Implementación de nuevas funcionalidades y mantenimiento de la plataforma con React 18, Next.js 14+ y TypeScript. Realicé la migración de React 16 y Next.js 12 a versiones más recientes, incluyendo ajustes con codemods. Implementé soporte de internacionalización con react-i18next, expandiendo operaciones a EE.UU. y España. Desarrollé Cora, un chatbot de IA integrado con OpenAI, enfocado en el apoyo psicológico."
       },
       "quackity-studios": {
         "position": "Desarrollador Front-end",
-        "description": "Desarrollé un panel interno para la administración y gestión de cuentas de redes sociales, utilizando tecnologías como React, Vite, React Router Dom y TypeScript. Además, desempeñé un papel importante como uno de los principales desarrolladores de la página de inicio de QSMP, empleando Next.js con componentes de servidor, TailwindCSS y TypeScript para la renderización de contenido del servidor."
+        "description": "Desarrollé un panel de control interno para la administración y gestión de cuentas de redes sociales utilizando React, Vite, React Router Dom y TypeScript. Además, fui uno de los principales desarrolladores de la página de inicio de QSMP, implementando Next.js con componentes de servidor, TailwindCSS y TypeScript para una renderización eficiente del contenido del lado del servidor."
       },
       "encapse-arquitetura": {
         "position": "Desarrollador Front-end",
-        "description": "Desarrollé la aplicación utilizando React, Tailwind CSS, React Hook Form con Zod e implementé funciones para enviar correos electrónicos al cliente y procesar datos, integrándose con la base de datos de la empresa."
+        "description": "Desarrollé la aplicación utilizando React, Tailwind CSS, React Hook Form con Zod, e implementé funciones para enviar correos electrónicos a clientes y procesar datos, integrando con la base de datos de la empresa."
       },
       "galorys": {
         "position": "Desarrollador Front-end",
-        "description": "Desarrollé interfaces de usuario interactivas y responsivas utilizando React, Styled Components y TypeScript, proporcionando una experiencia visual moderna y adaptable. Integré APIs en el backend para una comunicación sin problemas entre la interfaz y las funcionalidades del sistema, asegurando una interacción efectiva."
+        "description": "Desarrollé interfaces de usuario interactivas y responsivas utilizando React, Styled Components y TypeScript, entregando una experiencia visual moderna y adaptable. Integré APIs con el backend para asegurar una comunicación fluida entre la interfaz y las funcionalidades del sistema, permitiendo una interacción efectiva."
       },
       "shield-ethical": {
         "position": "Desarrollador Front-end",
-        "description": "Mi objetivo fue desarrollar una landing page interactiva y receptiva con un enfoque en la experiencia del usuario, siguiendo los principios de pixel perfect a un alto estándar. Utilicé HTML5, CSS3 y JavaScript para desarrollar un panel con un diseño moderno y adaptable."
+        "description": "Desarrollé una página de inicio interactiva y responsiva enfocada en la experiencia del usuario, siguiendo principios de diseño pixel-perfect con altos estándares. Usando HTML5, CSS3 y JavaScript, creé un panel de control con un diseño moderno y adaptable."
       },
       "hide-pagamentos": {
         "position": "Desarrollador Front-end",
-        "description": "Desarrollé una landing page que tiene como objetivo optimizar la experiencia del usuario, con un enfoque en un diseño pixel perfect y un diseño moderno y adaptable. Utilizando HTML5, CSS3, JavaScript, desarrollé una landing page receptiva e interactiva."
+        "description": "Desarrollé una página de inicio enfocada en optimizar la experiencia del usuario, siguiendo principios de diseño pixel-perfect para crear una interfaz moderna y adaptable. Usando HTML5, CSS3 y JavaScript, construí una página de inicio responsiva e interactiva."
       },
       "galorys-gta": {
         "position": "Desarrollador Front-end",
-        "description": "Desarrollé una landing page para un sitio web de Role Play de GTA 5. Diseñé el concepto en Figma. Tecnologías utilizadas: React, Styled Components y TypeScript."
+        "description": "Desarrollé una página de inicio para un sitio web de GTA 5 Role Play, incluyendo el concepto de diseño en Figma. Las tecnologías utilizadas incluyeron React, Styled Components y TypeScript."
       }
     }
   },
@@ -53,12 +53,12 @@
     "title": "Educación",
     "educations": {
       "uninassau": {
-        "title": "Uninassau - Educación a distancia",
-        "description": "Actualmente, he pausado mi graduación en Análisis y Desarrollo de Sistemas en Uninassau. Aunque ya tengo conocimientos previos, reconozco la importancia del curso para mejorar mis habilidades de programación."
+        "title": "Uninassau - Educación a Distancia",
+        "description": "Actualmente he pausado mi carrera de Análisis y Desarrollo de Sistemas en Uninassau. Aunque ya tengo conocimientos previos, reconozco la importancia del curso para mejorar mis habilidades de programación."
       },
       "high-school": {
-        "title": "Escuela Secundaria",
-        "description": "He completado la escuela secundaria en 2019. He obtenido un diploma de escuela secundaria, que es un reconocimiento por mis logros académicos."
+        "title": "Bachillerato",
+        "description": "Completé el bachillerato en 2019. He obtenido un diploma de bachillerato, que es un reconocimiento de mis logros académicos."
       }
     }
   }
