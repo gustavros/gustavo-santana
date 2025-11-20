@@ -1,5 +1,9 @@
+"use client";
+
 import type { Works } from "@/shared/types";
 import { Badge } from "@/shared/ui/badge";
+import { motion } from "framer-motion";
+import { useSound } from "@/hooks/use-sound";
 
 type WorksProps = {
   dictionary: Dictionary["works"];
@@ -13,6 +17,8 @@ function parseDate(dateString: string): Date {
 }
 
 export default function Works({ dictionary }: WorksProps) {
+  const { playSound } = useSound();
+
   const works: Works[] = [
     {
       companyName: "Loomi",
@@ -48,18 +54,6 @@ export default function Works({ dictionary }: WorksProps) {
       },
     },
     {
-      companyName: "Encapse Arquitetura",
-      companyHref: "https://www.encapse.arq.br/",
-      position: `${dictionary.jobs["encapse-arquitetura"].position}`,
-      freelancer: true,
-      remote: true,
-      description: `${dictionary.jobs["encapse-arquitetura"].description}`,
-      dates: {
-        start: "06/01/2023",
-        end: "08/01/2023",
-      },
-    },
-    {
       companyName: "Galory's",
       companyHref: "https://www.galorys.com/",
       position: `${dictionary.jobs["galorys"].position}`,
@@ -70,82 +64,73 @@ export default function Works({ dictionary }: WorksProps) {
         end: "03/01/2023",
       },
     },
-    {
-      companyName: "Shield Ethical",
-      companyHref: "https://shieldethical.com.br/",
-      position: `${dictionary.jobs["shield-ethical"].position}`,
-      freelancer: true,
-      remote: true,
-      description: `${dictionary.jobs["shield-ethical"].description}`,
-      dates: {
-        start: "10/01/2022",
-        end: "11/01/2022",
-      },
-    },
-    {
-      companyName: "Hide Pagamentos",
-      companyHref: "https://sapagamentos.com/facility/",
-      position: `${dictionary.jobs["hide-pagamentos"].position}`,
-      freelancer: true,
-      remote: true,
-      description: `${dictionary.jobs["hide-pagamentos"].description}`,
-      dates: {
-        start: "10/01/2022",
-        end: "10/01/2022",
-      },
-    },
-    {
-      companyName: "Galory's ®️ Official - Grand Theft Auto",
-      companyHref: "https://galorys.com/games/grandtheftauto",
-      position: `${dictionary.jobs["galorys-gta"].position}`,
-      freelancer: true,
-      remote: true,
-      description: `${dictionary.jobs["galorys-gta"].description}`,
-      dates: {
-        start: "07/01/2022",
-        end: "07/01/2022",
-      },
-    },
   ];
 
   return (
-    <>
-      {works.map((work) => (
-        <div
+    <div className="flex flex-col gap-3">
+      {works.map((work, index) => (
+        <motion.div
           key={work.companyName}
-          className="rounded-lg bg-card text-card-foreground"
+          className="rounded-lg bg-card text-card-foreground p-2"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.4, delay: index * 0.05 }}
+          onMouseEnter={() => playSound("hover")}
+          whileHover={{ scale: 1.01 }}
         >
-          <div className="flex flex-col space-y-1.5">
+          <div className="flex flex-col space-y-1">
             <div className="flex items-start md:items-center justify-between gap-x-2 text-base">
               <div className="flex flex-col sm:flex-row sm:items-center sm:gap-2">
                 <h1 className="font-semibold leading-none text-lg">
-                  <a
+                  <motion.a
                     href={work.companyHref}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:underline"
+                    onMouseEnter={() => playSound("hover")}
+                    whileHover={{ scale: 1.02 }}
+                    transition={{ duration: 0.2 }}
                   >
                     {work.companyName}
-                  </a>
+                  </motion.a>
                 </h1>
 
                 <div className="py-2 flex gap-1">
                   {work.remote && (
-                    <Badge variant="default">
-                      <span className="font-mono">{dictionary.remote}</span>
-                    </Badge>
+                    <motion.div
+                      onMouseEnter={() => playSound("hover")}
+                      whileHover={{ scale: 1.05 }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      <Badge variant="default">
+                        <span className="font-mono">{dictionary.remote}</span>
+                      </Badge>
+                    </motion.div>
                   )}
 
                   {work.hybrid && (
-                    <Badge variant="default">
-                      <span className="font-mono">{dictionary.hybrid || "Híbrido"}</span>
-                    </Badge>
+                    <motion.div
+                      onMouseEnter={() => playSound("hover")}
+                      whileHover={{ scale: 1.05 }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      <Badge variant="default">
+                        <span className="font-mono">{dictionary.hybrid || "Híbrido"}</span>
+                      </Badge>
+                    </motion.div>
                   )}
 
                   {work.freelancer && (
-                    <Badge variant="secondary">
-                      <span className="font-mono">Freelancer</span>
-                    </Badge>
+                    <motion.div
+                      onMouseEnter={() => playSound("hover")}
+                      whileHover={{ scale: 1.05 }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      <Badge variant="secondary">
+                        <span className="font-mono">Freelancer</span>
+                      </Badge>
+                    </motion.div>
                   )}
                 </div>
               </div>
@@ -171,12 +156,12 @@ export default function Works({ dictionary }: WorksProps) {
             <h4 className="font-mono text-base leading-none">{work.position}</h4>
           </div>
 
-          <div className="mt-2 text-pretty font-mono text-sm text-muted-foreground">
+          <div className="mt-1 text-pretty font-mono text-sm text-muted-foreground">
             {work.description}
           </div>
-        </div>
+        </motion.div>
       ))}
-    </>
+    </div>
   );
 }
 

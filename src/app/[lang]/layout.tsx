@@ -1,13 +1,11 @@
-export default  function HomeLayout({
-	children,
+export default function HomeLayout({
+  children,
 }: {
-	children: React.ReactNode;
+  children: React.ReactNode;
 }) {
-
-
-
-
-	return (
-		<main className="container relative mx-auto scroll-my-12 overflow-auto pt-4">{children}</main>
-	);
+  return (
+    <main className="relative mx-auto max-w-5xl overflow-x-hidden px-4 pt-2 pb-2 min-h-screen">
+      {children}
+    </main>
+  );
 }
