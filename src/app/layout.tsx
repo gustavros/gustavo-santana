@@ -1,8 +1,8 @@
-import { ThemeProvider } from "@/components/theme-toggle/theme-provider";
+import { ThemeProvider } from "@/modules/theme";
 import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
-import { LanguageProvider } from "@/context/use-language-context";
+import { LanguageProvider } from "@/modules/i18n";
 
 const grotesk = Space_Grotesk({ subsets: ["latin"] });
 
