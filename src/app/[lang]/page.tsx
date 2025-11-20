@@ -1,13 +1,10 @@
-import About from "@/components/about";
-import Header from "@/components/header";
-import SkillsList from "@/components/skills-list";
-
-import { Locale } from "@/i18n-config";
-import { getDictionary } from "@/lib/get-dictionary";
-
-import { skillsItems } from "@/utils/data";
-import WorksList from "@/components/works-list";
-import EducationList from "@/components/education-list";
+import { About } from "@/modules/about";
+import { Header } from "@/modules/header";
+import { SkillsList, skillsItems } from "@/modules/skills";
+import { Locale } from "@/modules/i18n";
+import { getDictionary } from "@/modules/i18n/get-dictionary";
+import { WorksList } from "@/modules/works";
+import { EducationList } from "@/modules/education";
 
 type HomeProps = {
   params: {
