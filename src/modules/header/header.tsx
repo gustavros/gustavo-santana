@@ -16,6 +16,8 @@ import { ModeToggle } from "@/modules/theme";
 import { useLanguage, Locale } from "@/modules/i18n";
 import { usePathname, useRouter } from "next/navigation";
 import { useCallback } from "react";
+import { motion } from "framer-motion";
+import { useSound } from "@/hooks/use-sound";
 
 import { Cookies } from "react-cookie";
 import { Icons } from "@/shared/assets/icons";
@@ -28,6 +30,7 @@ const cookies = new Cookies();
 
 export default function Header({ dictionary }: HeaderProps) {
   const { languages, selectedLanguage, selectLanguage } = useLanguage();
+  const { playSound } = useSound();
 
   const pathname = usePathname();
   const router = useRouter();
@@ -46,6 +49,7 @@ export default function Header({ dictionary }: HeaderProps) {
 
   const handleLanguageSelect = useCallback(
     (language: string) => {
+      playSound("click");
       selectLanguage(language as Locale);
 
       cookies.set("language", language, {
@@ -54,12 +58,17 @@ export default function Header({ dictionary }: HeaderProps) {
 
       router.push(redirectedPathName(language));
     },
-    [redirectedPathName, router, selectLanguage]
+    [redirectedPathName, router, selectLanguage, playSound]
   );
 
   return (
     <header className="flex w-full flex-col items-center justify-between">
-      <div className="my-4 flex w-full items-center justify-between gap-2 py-4">
+      <motion.div
+        className="my-1 flex w-full items-center justify-between gap-2 py-1"
+        initial={{ opacity: 0, y: -10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4 }}
+      >
         <Select onValueChange={handleLanguageSelect} value={selectedLanguage}>
           <SelectTrigger className="w-[180px]">
             <SelectValue placeholder="Language" />
@@ -84,28 +93,36 @@ export default function Header({ dictionary }: HeaderProps) {
         </Select>
 
         <ModeToggle dictionary={dictionary.theme} />
-      </div>
+      </motion.div>
 
       <div className="flex w-full">
-        <div className="flex-1">
+        <motion.div
+          className="flex-1"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+        >
           <div className="flex flex-col items-start">
-            <h1 className="text-2xl font-bold">Gustavo Santana</h1>
+            <h1 className="text-xl font-bold">Gustavo Santana</h1>
 
-            <p className="pt-1 font-mono text-sm text-muted-foreground">
+            <p className="pt-0.5 font-mono text-sm text-muted-foreground">
               {dictionary.description}
             </p>
 
-            <div className="flex items-center gap-2 py-1">
-              <a
+            <div className="flex items-center gap-2 py-0.5">
+              <motion.a
                 target="_blank"
                 rel="noreferrer"
                 href="https://www.google.com/maps/place/Recife"
                 className="flex items-center gap-1 text-xs text-muted-foreground hover:underline"
+                onMouseEnter={() => playSound("hover")}
+                whileHover={{ scale: 1.02 }}
+                transition={{ duration: 0.2 }}
               >
                 <Pin className="h-4 w-4" />
 
                 <span className="font-mono">Pernambuco, Brazil.</span>
-              </a>
+              </motion.a>
 
               <span className="flex items-center gap-2 font-mono text-xs text-muted-foreground print:hidden">
                 GMT -3
@@ -113,33 +130,46 @@ export default function Header({ dictionary }: HeaderProps) {
             </div>
           </div>
 
-          <div className="flex items-center justify-start gap-1 pt-2 print:hidden">
+          <div className="flex items-center justify-start gap-1 pt-1 print:hidden">
             <SocialsButtonsList socialsButtons={socialsButtons} />
           </div>
 
-          <div className="hidden flex-col gap-1 pt-1 print:flex">
-            <a
+          <div className="hidden flex-col gap-1 pt-0.5 print:flex">
+            <motion.a
               href="mailto:gustavossw@hotmail.com"
               className="font-mono text-sm underline"
+              onMouseEnter={() => playSound("hover")}
+              whileHover={{ scale: 1.02 }}
+              transition={{ duration: 0.2 }}
             >
               gustavossw@hotmail.com
-            </a>
-            <a
+            </motion.a>
+            <motion.a
               href="tel:+5581983704666"
               className="font-mono text-sm underline"
+              onMouseEnter={() => playSound("hover")}
+              whileHover={{ scale: 1.02 }}
+              transition={{ duration: 0.2 }}
             >
               +55 (81) 98370-4666
-            </a>
+            </motion.a>
           </div>
-        </div>
+        </motion.div>
 
-        <Image
-          src="https://github.com/gustavros.png"
-          alt="Profile"
-          width={140}
-          height={140}
-          className="aspect-square rounded hidden sm:block"
-        />
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="hidden sm:block"
+        >
+          <Image
+            src="https://github.com/gustavros.png"
+            alt="Profile"
+            width={140}
+            height={140}
+            className="aspect-square rounded"
+          />
+        </motion.div>
       </div>
     </header>
   );

@@ -53,7 +53,13 @@
   * {
     @apply border-border;
   }
+  html {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground;
+    overflow-x: hidden;
+    background-color: transparent;
   }
 }

@@ -5,6 +5,7 @@ import { Locale } from "@/modules/i18n";
 import { getDictionary } from "@/modules/i18n/get-dictionary";
 import { WorksList } from "@/modules/works";
 import { EducationList } from "@/modules/education";
+import { AnimatedPageWrapper, AnimatedSection } from "@/components/animated-page-wrapper";
 
 type HomeProps = {
   params: {
@@ -16,21 +17,29 @@ export default async function Home({ params: { lang } }: HomeProps) {
   const dictionary = await getDictionary(lang);
 
   return (
-    <section className="mx-auto w-full max-w-2xl space-y-8 print:space-y-6">
-      <Header dictionary={dictionary.header} />
+    <AnimatedPageWrapper>
+      <AnimatedSection>
+        <Header dictionary={dictionary.header} />
+      </AnimatedSection>
 
-      <About dictionary={dictionary.about} />
+      <AnimatedSection>
+        <About dictionary={dictionary.about} />
+      </AnimatedSection>
 
-      <WorksList dictionary={dictionary.works} />
+      <AnimatedSection>
+        <WorksList dictionary={dictionary.works} />
+      </AnimatedSection>
 
-      <section className="flex min-h-0 flex-col gap-y-3">
-        <h1 className="text-xl font-bold">{dictionary.skills["title"]}</h1>
+      <AnimatedSection className="flex min-h-0 flex-col gap-y-3">
+        <h1 className="text-lg font-bold">{dictionary.skills["title"]}</h1>
         <div className="flex w-full flex-wrap gap-1">
           <SkillsList skillsItems={skillsItems} />
         </div>
-      </section>
+      </AnimatedSection>
 
-      <EducationList dictionary={dictionary.education} />
-    </section>
+      <AnimatedSection>
+        <EducationList dictionary={dictionary.education} />
+      </AnimatedSection>
+    </AnimatedPageWrapper>
   );
 }

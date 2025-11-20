@@ -1,4 +1,7 @@
+"use client";
+
 import { Educations } from "@/shared/types";
+import { motion } from "framer-motion";
 
 type EducationListProps = {
   dictionary: Dictionary["education"];
@@ -24,11 +27,24 @@ export default function EducationList({ dictionary }: EducationListProps) {
   ];
 
   return (
-    <section className="flex min-h-0 flex-col gap-y-3 py-3">
-      <h1 className="text-xl font-bold">{dictionary["title"]}</h1>
+    <motion.section
+      className="flex min-h-0 flex-col gap-y-3"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true, margin: "-50px" }}
+      transition={{ duration: 0.4 }}
+    >
+      <h1 className="text-lg font-bold">{dictionary["title"]}</h1>
 
-      {educations.map((education) => (
-        <div className="flex flex-col gap-2" key={education.title}>
+      {educations.map((education, index) => (
+        <motion.div
+          className="flex flex-col gap-2"
+          key={education.title}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4, delay: index * 0.1 }}
+        >
           <div className="flex items-center justify-between gap-1">
             <h1 className="font-bold">{education.title}</h1>
 
@@ -54,9 +70,9 @@ export default function EducationList({ dictionary }: EducationListProps) {
           <p className="text-pretty font-mono text-sm text-muted-foreground">
             {education.description}
           </p>
-        </div>
+        </motion.div>
       ))}
-    </section>
+    </motion.section>
   );
 }
 

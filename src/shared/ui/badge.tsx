@@ -1,5 +1,8 @@
+"use client";
+
 import { type VariantProps, cva } from "class-variance-authority";
 import * as React from "react";
+import { motion } from "framer-motion";
 
 import { cn } from "@/shared/utils";
 
@@ -20,10 +23,26 @@ const badgeVariants = cva(
 	},
 );
 
-export interface BadgeProps extends React.HTMLAttributes<HTMLDivElement>, VariantProps<typeof badgeVariants> {}
+export interface BadgeProps extends React.HTMLAttributes<HTMLDivElement>, VariantProps<typeof badgeVariants> {
+	enableHoverSound?: boolean;
+}
 
-function Badge({ className, variant, ...props }: BadgeProps) {
-	return <div className={cn(badgeVariants({ variant }), className)} {...props} />;
+function Badge({ className, variant, enableHoverSound, ...props }: BadgeProps) {
+	const Component = enableHoverSound ? motion.div : "div";
+	const componentProps = enableHoverSound
+		? {
+				whileHover: { scale: 1.05 },
+				transition: { duration: 0.2 },
+			}
+		: {};
+
+	return (
+		<Component
+			className={cn(badgeVariants({ variant }), className)}
+			{...componentProps}
+			{...props}
+		/>
+	);
 }
 
 export { Badge, badgeVariants };
