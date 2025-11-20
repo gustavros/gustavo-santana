@@ -32,7 +32,7 @@ interface AnimatedPageWrapperProps {
 export function AnimatedPageWrapper({ children }: AnimatedPageWrapperProps) {
   return (
     <motion.section
-      className="mx-auto w-full max-w-5xl space-y-6 print:space-y-4"
+      className="mx-auto w-full max-w-5xl space-y-6 py-5 print:space-y-4"
       variants={containerVariants}
       initial="hidden"
       animate="visible"

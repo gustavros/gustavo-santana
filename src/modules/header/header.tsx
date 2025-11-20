@@ -64,7 +64,7 @@ export default function Header({ dictionary }: HeaderProps) {
   return (
     <header className="flex w-full flex-col items-center justify-between">
       <motion.div
-        className="my-1 flex w-full items-center justify-between gap-2 py-1"
+        className="my-1 flex w-full items-center justify-between gap-2 py-3"
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4 }}
@@ -174,4 +174,3 @@ export default function Header({ dictionary }: HeaderProps) {
     </header>
   );
 }
-
