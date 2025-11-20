@@ -21,7 +21,7 @@ export default function Works({ dictionary }: WorksProps) {
       hybrid: true,
       description: `${dictionary.jobs["loomi"].description}`,
       dates: {
-        start: "10/01/2025",
+        start: "01/10/2025",
         end: "",
       },
     },
@@ -32,7 +32,7 @@ export default function Works({ dictionary }: WorksProps) {
       remote: true,
       description: `${dictionary.jobs["beecorp"].description}`,
       dates: {
-        start: "07/03/2024",
+        start: "01/07/2024",
         end: "29/08/2025",
       },
     },
