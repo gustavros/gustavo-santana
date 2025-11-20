@@ -4,6 +4,13 @@ type EducationListProps = {
   dictionary: Dictionary["education"];
 };
 
+// Helper function to parse DD/MM/YYYY format to Date
+function parseDate(dateString: string): Date {
+  if (!dateString) return new Date();
+  const [day, month, year] = dateString.split("/");
+  return new Date(parseInt(year), parseInt(month) - 1, parseInt(day));
+}
+
 export default function EducationList({ dictionary }: EducationListProps) {
   const educations: Educations[] = [
     {
@@ -27,7 +34,7 @@ export default function EducationList({ dictionary }: EducationListProps) {
 
             <time className="text-sm tabular-nums text-gray-500">
               <span className="font-mono text-xs md:text-sm">
-                {new Date(education.dates.start).toLocaleDateString("en-US", {
+                {parseDate(education.dates.start).toLocaleDateString("en-US", {
                   year: "numeric",
                   month: "short",
                 })}
@@ -35,7 +42,7 @@ export default function EducationList({ dictionary }: EducationListProps) {
               <span className="px-1">-</span>
               <span className="font-mono text-xs md:text-sm">
                 {education.dates.end
-                  ? new Date(education.dates.end).toLocaleDateString("en-US", {
+                  ? parseDate(education.dates.end).toLocaleDateString("en-US", {
                       year: "numeric",
                       month: "short",
                     })

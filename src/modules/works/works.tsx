@@ -5,6 +5,13 @@ type WorksProps = {
   dictionary: Dictionary["works"];
 };
 
+// Helper function to parse DD/MM/YYYY format to Date
+function parseDate(dateString: string): Date {
+  if (!dateString) return new Date();
+  const [day, month, year] = dateString.split("/");
+  return new Date(parseInt(year), parseInt(month) - 1, parseInt(day));
+}
+
 export default function Works({ dictionary }: WorksProps) {
   const works: Works[] = [
     {
@@ -145,7 +152,7 @@ export default function Works({ dictionary }: WorksProps) {
 
               <div className="text-sm tabular-nums text-gray-500">
                 <span className="font-mono text-xs md:text-sm">
-                  {new Date(work.dates.start).toLocaleDateString("en-US", {
+                  {parseDate(work.dates.start).toLocaleDateString("en-US", {
                     year: "numeric",
                     month: "short",
                   })}
@@ -153,7 +160,7 @@ export default function Works({ dictionary }: WorksProps) {
                 <span className="px-1">-</span>
                 <span className="font-mono text-xs md:text-sm">
                   {work.dates.end
-                    ? new Date(work.dates.end).toLocaleDateString("en-US", {
+                    ? parseDate(work.dates.end).toLocaleDateString("en-US", {
                         year: "numeric",
                         month: "short",
                       })
