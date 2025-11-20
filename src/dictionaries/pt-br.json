@@ -9,7 +9,7 @@
   },
   "about": {
     "title": "Sobre mim",
-    "description": "Tenho mais de 3 anos de experiência com <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>TypeScript</strong>, <strong>Tailwind CSS</strong>, <strong>ReactJS</strong>, <strong>Next.js</strong>, <strong>Git</strong>, <strong>GitHub</strong>, e mais. Amo estudar e aprender coisas, graças à minha curiosidade e experiência em resolução de problemas."
+    "description": "Desenvolvedor Front-end com mais de 3 anos de experiência em desenvolvimento web moderno. Especializado em <strong>React</strong>, <strong>Next.js</strong> e <strong>TypeScript</strong>, com expertise em construção de aplicações escaláveis e performáticas. Experiência sólida em gerenciamento de estado com <strong>React Query</strong>, validação de dados com <strong>Zod</strong>, e implementação de interfaces responsivas utilizando <strong>Tailwind CSS</strong> e <strong>Styled Components</strong>. Apaixonado por código limpo, arquitetura de componentes reutilizáveis e melhores práticas de desenvolvimento. Sempre em busca de aprender novas tecnologias e aprimorar habilidades técnicas."
   },
   "works": {
     "title": "Experiência Profissional",
