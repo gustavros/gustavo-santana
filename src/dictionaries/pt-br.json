@@ -9,13 +9,18 @@
   },
   "about": {
     "title": "Sobre mim",
-    "description": "Tenho 2 anos de experiência com <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>TypeScript</strong>, <strong>Tailwind CSS</strong>, <strong>ReactJS</strong>, <strong>Next.js</strong>, <strong>Git</strong>, <strong>GitHub</strong>, e mais. Amo estudar e aprender coisas, graças à minha curiosidade e experiência em resolução de problemas."
+    "description": "Tenho mais de 3 anos de experiência com <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>TypeScript</strong>, <strong>Tailwind CSS</strong>, <strong>ReactJS</strong>, <strong>Next.js</strong>, <strong>Git</strong>, <strong>GitHub</strong>, e mais. Amo estudar e aprender coisas, graças à minha curiosidade e experiência em resolução de problemas."
   },
   "works": {
     "title": "Experiência Profissional",
     "present": "Atualmente",
     "remote": "Remoto",
+    "hybrid": "Híbrido",
     "jobs": {
+      "loomi": {
+        "position": "Desenvolvedor Front-end",
+        "description": "Desenvolvimento de aplicações web modernas utilizando React, Next.js e TypeScript. Implementação de gerenciamento de estado com React Query para otimização de requisições e cache. Validação de formulários e schemas com Zod, garantindo type-safety e validação em runtime. Trabalho com arquitetura de componentes reutilizáveis e padrões de código limpo."
+      },
       "beecorp": {
         "position": "Desenvolvedor Front-end",
         "description": "Implementação de novas funcionalidades e manutenção da plataforma com React 18, Next.js 14+ e TypeScript. Realizei migração do React 16 e Next.js 12 para versões mais recentes, incluindo ajustes com codemods. Implementei suporte à internacionalização com react-i18next, expandindo operações para EUA e Espanha. Desenvolvi a Cora, uma chatbot de IA integrada com OpenAI, focada em suporte psicológico."
@@ -55,10 +60,6 @@
       "uninassau": {
         "title": "Uninassau - Ensino à Distância",
         "description": "Atualmente pausei meu curso de Análise e Desenvolvimento de Sistemas na Uninassau. Embora já tenha conhecimento prévio, reconheço a importância do curso para aprimorar minhas habilidades de programação."
-      },
-      "high-school": {
-        "title": "Ensino Médio",
-        "description": "Concluí o ensino médio em 2019. Obtive o diploma do ensino médio, que é um reconhecimento das minhas conquistas acadêmicas."
       }
     }
   }

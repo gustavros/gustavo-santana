@@ -7,6 +7,17 @@ type WorksProps = {
 
 export default function Works({ dictionary }: WorksProps) {
   const works: Works[] = [{
+    companyName: "Loomi",
+    companyHref: "https://loomi.com.br/",
+    position: `${dictionary.jobs["loomi"].position}`,
+    hybrid: true,
+    description: `${dictionary.jobs["loomi"].description}`,
+    dates: {
+      start: "10/01/2025",
+      end: "",
+    },
+  },
+  {
     companyName: "BeeCorp - Saúde e Bem-estar",
     companyHref: "https://beecorp.com.br/",
     position: `${dictionary.jobs["beecorp"].position}`,
@@ -14,7 +25,7 @@ export default function Works({ dictionary }: WorksProps) {
     description: `${dictionary.jobs["beecorp"].description}`,
     dates: {
       start: "07/03/2024",
-      end: "",
+      end: "29/08/2025",
     },
   },
     {
@@ -114,6 +125,12 @@ export default function Works({ dictionary }: WorksProps) {
                   {work.remote && (
                     <Badge variant="default">
                       <span className="font-mono">{dictionary.remote}</span>
+                    </Badge>
+                  )}
+
+                  {work.hybrid && (
+                    <Badge variant="default">
+                      <span className="font-mono">{dictionary.hybrid || "Híbrido"}</span>
                     </Badge>
                   )}
 

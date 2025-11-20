@@ -35,6 +35,7 @@ export interface Works {
   position: string;
   remote?: boolean;
   freelancer?: boolean;
+  hybrid?: boolean;
   description: string;
   dates: {
     start: string;

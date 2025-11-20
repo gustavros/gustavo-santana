@@ -14,14 +14,6 @@ export default function EducationList({ dictionary }: EducationListProps) {
         end: "04/01/2026",
       },
     },
-    {
-      title: `${dictionary.educations["high-school"].title}`,
-      description: `${dictionary.educations["high-school"].description}`,
-      dates: {
-        start: "02/04/2016",
-        end: "12/18/2019",
-      },
-    },
   ];
 
   return (

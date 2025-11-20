@@ -16,6 +16,7 @@ declare global {
       title: string;
       present: string;
       remote: string;
+      hybrid?: string;
       jobs: {
         [key: string]: {
           position: string;

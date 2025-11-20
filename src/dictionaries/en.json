@@ -9,13 +9,18 @@
   },
   "about": {
     "title": "About me",
-    "description": "I have 2 years of experience with <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>TypeScript</strong>, <strong>Tailwind CSS</strong>, <strong>ReactJS</strong>, <strong>Next.js</strong>, <strong>Git</strong>, <strong>GitHub</strong>, and more. I love studying and learning things, thanks to my curiosity and problem-solving experience."
+    "description": "I have over 3 years of experience with <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>TypeScript</strong>, <strong>Tailwind CSS</strong>, <strong>ReactJS</strong>, <strong>Next.js</strong>, <strong>Git</strong>, <strong>GitHub</strong>, and more. I love studying and learning things, thanks to my curiosity and problem-solving experience."
   },
   "works": {
     "title": "Work Experience",
     "present": "Currently",
     "remote": "Remote",
+    "hybrid": "Hybrid",
     "jobs": {
+      "loomi": {
+        "position": "Front-end Developer",
+        "description": "Development of modern web applications using React, Next.js and TypeScript. Implementation of state management with React Query for request optimization and caching. Form and schema validation with Zod, ensuring type-safety and runtime validation. Working with reusable component architecture and clean code patterns."
+      },
       "beecorp": {
         "position": "Front-end Developer",
         "description": "Implementation of new features and platform maintenance with React 18, Next.js 14+ and TypeScript. Performed migration from React 16 and Next.js 12 to newer versions, including adjustments with codemods. Implemented internationalization support with react-i18next, expanding operations to USA and Spain. Developed Cora, an AI chatbot integrated with OpenAI, focused on psychological support."
@@ -55,10 +60,6 @@
       "uninassau": {
         "title": "Uninassau - Distance Learning",
         "description": "I have currently paused my Systems Analysis and Development degree at Uninassau. Although I already have prior knowledge, I recognize the importance of the course to improve my programming skills."
-      },
-      "high-school": {
-        "title": "High School",
-        "description": "I completed high school in 2019. I have obtained a high school diploma, which is a recognition of my academic achievements."
       }
     }
   }

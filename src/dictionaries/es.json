@@ -9,13 +9,18 @@
   },
   "about": {
     "title": "Sobre mí",
-    "description": "Tengo 2 años de experiencia con <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>TypeScript</strong>, <strong>Tailwind CSS</strong>, <strong>ReactJS</strong>, <strong>Next.js</strong>, <strong>Git</strong>, <strong>GitHub</strong>, y más. Me encanta estudiar y aprender cosas, gracias a mi curiosidad y experiencia en resolución de problemas."
+    "description": "Tengo más de 3 años de experiencia con <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>TypeScript</strong>, <strong>Tailwind CSS</strong>, <strong>ReactJS</strong>, <strong>Next.js</strong>, <strong>Git</strong>, <strong>GitHub</strong>, y más. Me encanta estudiar y aprender cosas, gracias a mi curiosidad y experiencia en resolución de problemas."
   },
   "works": {
     "title": "Experiencia Laboral",
     "present": "Actualmente",
     "remote": "Remoto",
+    "hybrid": "Híbrido",
     "jobs": {
+      "loomi": {
+        "position": "Desarrollador Front-end",
+        "description": "Desarrollo de aplicaciones web modernas utilizando React, Next.js y TypeScript. Implementación de gestión de estado con React Query para optimización de solicitudes y caché. Validación de formularios y esquemas con Zod, garantizando type-safety y validación en tiempo de ejecución. Trabajo con arquitectura de componentes reutilizables y patrones de código limpio."
+      },
       "beecorp": {
         "position": "Desarrollador Front-end",
         "description": "Implementación de nuevas funcionalidades y mantenimiento de la plataforma con React 18, Next.js 14+ y TypeScript. Realicé la migración de React 16 y Next.js 12 a versiones más recientes, incluyendo ajustes con codemods. Implementé soporte de internacionalización con react-i18next, expandiendo operaciones a EE.UU. y España. Desarrollé Cora, un chatbot de IA integrado con OpenAI, enfocado en el apoyo psicológico."
@@ -55,10 +60,6 @@
       "uninassau": {
         "title": "Uninassau - Educación a Distancia",
         "description": "Actualmente he pausado mi carrera de Análisis y Desarrollo de Sistemas en Uninassau. Aunque ya tengo conocimientos previos, reconozco la importancia del curso para mejorar mis habilidades de programación."
-      },
-      "high-school": {
-        "title": "Bachillerato",
-        "description": "Completé el bachillerato en 2019. He obtenido un diploma de bachillerato, que es un reconocimiento de mis logros académicos."
       }
     }
   }
