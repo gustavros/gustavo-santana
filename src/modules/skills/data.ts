@@ -20,6 +20,24 @@ export const skillsItems: SkillsItems[] = [
     name: "Next.js",
   },
   {
+    name: "React Query",
+  },
+  {
+    name: "Zod",
+  },
+  {
+    name: "React Hook Form",
+  },
+  {
+    name: "React Router Dom",
+  },
+  {
+    name: "Vite",
+  },
+  {
+    name: "react-i18next",
+  },
+  {
     name: "TailwindCSS",
   },
   {
@@ -27,6 +45,12 @@ export const skillsItems: SkillsItems[] = [
   },
   {
     name: "SASS",
+  },
+  {
+    name: "Git",
+  },
+  {
+    name: "GitHub",
   },
 ];
 
