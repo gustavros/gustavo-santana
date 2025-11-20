@@ -2,14 +2,14 @@
 
 import { SkillsItems } from "@/shared/types";
 import { Badge } from "@/shared/ui/badge";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { useSound } from "@/hooks/use-sound";
 
 interface SkillsListProps {
   skillsItems: SkillsItems[];
 }
 
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -19,14 +19,14 @@ const containerVariants = {
   },
 };
 
-const itemVariants = {
+const itemVariants: Variants = {
   hidden: { opacity: 0, scale: 0.8 },
   visible: {
     opacity: 1,
     scale: 1,
     transition: {
       duration: 0.3,
-      ease: "easeOut",
+      ease: "easeOut" as const,
     },
   },
 };
@@ -58,4 +58,3 @@ export default function SkillsList({ skillsItems }: SkillsListProps) {
     </motion.div>
   );
 }
-

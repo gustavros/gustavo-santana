@@ -1,0 +1,4 @@
+{
+  "*.{ts,tsx}": ["bash -c 'pnpm tsc --noEmit'"],
+  "*.{js,jsx,ts,tsx,json,css,scss,md}": ["prettier --write"]
+}
