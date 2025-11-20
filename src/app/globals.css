@@ -56,10 +56,22 @@
   html {
     overflow-x: hidden;
     overflow-y: auto;
+    cursor: none;
   }
   body {
     @apply text-foreground;
     overflow-x: hidden;
     background-color: transparent;
+  }
+
+  /* Text selection color */
+  ::selection {
+    background-color: #fef08a;
+    color: #000;
+  }
+
+  ::-moz-selection {
+    background-color: #fef08a;
+    color: #000;
   }
 }

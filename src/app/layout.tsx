@@ -1,15 +1,16 @@
-import { ThemeProvider } from '@/modules/theme';
-import type { Metadata } from 'next';
-import { Space_Grotesk } from 'next/font/google';
-import './globals.css';
-import { LanguageProvider } from '@/modules/i18n';
-import { BackgroundVectors } from '@/components/background-vectors';
+import { ThemeProvider } from "@/modules/theme";
+import type { Metadata } from "next";
+import { Space_Grotesk } from "next/font/google";
+import "./globals.css";
+import { LanguageProvider } from "@/modules/i18n";
+import { BackgroundVectors } from "@/components/background-vectors";
+import { AnimatedCursorWrapper } from "@/components/animated-cursor-wrapper";
 
-const grotesk = Space_Grotesk({ subsets: ['latin'] });
+const grotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Gustavo Santana',
-  description: 'Gustavo Santana personal website',
+  title: "Gustavo Santana",
+  description: "Gustavo Santana personal website",
 };
 
 export default function RootLayout({
@@ -38,6 +39,7 @@ export default function RootLayout({
             defaultTheme="system"
             enableColorScheme
           >
+            <AnimatedCursorWrapper />
             <BackgroundVectors />
             {children}
           </ThemeProvider>

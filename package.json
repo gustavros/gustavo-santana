@@ -23,6 +23,7 @@
     "next-themes": "^0.2.1",
     "pnpm": "^10.11.1",
     "react": "^18",
+    "react-animated-cursor": "^2.11.2",
     "react-cookie": "^7.1.0",
     "react-dom": "^18",
     "tailwind-merge": "^2.2.0",
